@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il Tuo Nome</title>
+  <title>Tommaso Zenzola</title>
   <style>
     * {
       margin: 0;
@@ -12,29 +12,97 @@
     }
 
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       min-height: 100vh;
       background: #0f172a;
+      color: #f8fafc;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
     }
 
+    .container {
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Nome in grande */
     h1 {
-      font-size: clamp(3rem, 10vw, 8rem);
+      font-size: clamp(2.5rem, 8vw, 5rem);
       font-weight: 900;
-      letter-spacing: -2px;
+      letter-spacing: -1px;
       background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-align: center;
-      padding: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Titolo sezione lavori */
+    .section-title {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1.2rem;
+    }
+
+    /* Lista dei link */
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .project-link {
+      display: block;
+      padding: 1rem 1.5rem;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      color: #f8fafc;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    /* Effetto quando passi sopra con il mouse */
+    .project-link:hover {
+      border-color: #38bdf8;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(56, 189, 248, 0.2);
+      color: #38bdf8;
     }
   </style>
 </head>
 <body>
 
-  <h1>TOMMASO ZENZOLA</h1>
+  <div class="container">
+    <!-- Cambia questo con il tuo nome -->
+    <h1>IL TUO NOME</h1>
+
+    <div class="section-title">🚀 I miei lavori</div>
+
+    <div class="projects-list">
+      
+      <!-- PER AGGIUNGERE UN NUOVO LAVORO: copia e incolla una delle righe sotto -->
+      <a href="https://INCOLLA-IL-LINK-QUI.com" target="_blank" class="project-link">
+        Primo Lavoro
+      </a>
+
+      <a href="https://INCOLLA-IL-LINK-QUI.com" target="_blank" class="project-link">
+        Secondo Lavoro
+      </a>
+
+      <a href="https://INCOLLA-IL-LINK-QUI.com" target="_blank" class="project-link">
+        Terzo Lavoro
+      </a>
+
+    </div>
+  </div>
 
 </body>
 </html>
